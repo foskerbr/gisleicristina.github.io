@@ -9,39 +9,8 @@ body{
 }
 main{
     margin: 0 auto;
-    width: 980px;
+    width: 100%;
     position: relative;
-}
-/* Dimensão das Imagens */
-.img-celular{
-    max-width:15px;
-    max-height:25px;
-    width: auto;
-    height: auto;
-}
-.img-email{
-    max-width: 17px;
-    max-height: 14px;
-    width: auto;
-    height: auto;
-}
-.img-wpp{
-    max-width: 25px;
-    max-height: 25px;
-    width: auto;
-    height: auto;
-}
-.img-face{
-    max-width: 25px;
-    max-height: 25px;
-    width: auto;
-    height: auto;
-}
-.img-insta{
-    max-width: 25px;
-    max-height: 25px;
-    width: auto;
-    height: auto;
 }
 .img-logo{
     max-width: 305px;
@@ -50,67 +19,53 @@ main{
     height: auto;
 }
 
-/*FimDimensão das Imagens */
-/* Header Cabecalho*/
-.cabecalho{
-    width: 100%;
-    background-color: #e6e6e6;
-    height: 60px;
-    margin: 0 auto;
-}
-.contato-header{
-    width: 45%;
-    padding: 7px;
-    float: left;
-}
-.contato-header ul li{
-    color: #696767;
-    margin-left: 30px;
-    font-size: 13px;
-    display: inline-block;
-}
-.redes-sociais ul li{
-    margin-left: 20px;
-    display: inline-block;
-    
 
-}
-.redes-sociais{
-    width: 50%;
-    float: right;
-    padding-left: 30px;
-}
-/*fim HeaderCabecalho*/
-/*Header-2*/
-.header-2{
+/*header*/
+.cabecalho{
     background-color: #ffffff;
     width: 100%;
     margin-bottom: 3px solid #efefef;
-    height: 80px;
-    
+    height: 90px;
+    position: fixed;
+    z-index: 100;  
+}
+
+.logo, .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 40px;
 }
 .logo{
     float: left;
+    margin-top: 10px;
     margin-right: 30px;
 }
-.menu ul li{
-    display: inline-block;
-    color: #646363;
-    margin-left: 15px;
-    margin-top: 30px;
+.navbar-toggle{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    background-color: #00a460;
+    padding: 0 5px;
+    border-radius: 5px;
     
 }
-/*.menu ul li:hover{
-    border-bottom: #00a460;
-    -webkit-transition: 0.15s ease-in;
-    -moz-transition: 0.15s ease-in;
-    -o-transition: 0.15s ease-in;
-    transition: 0.15s ease-in;
+.navbar-toggle .fas{font-size: 15px;}
+.menu ul li{
+    flex-wrap: nowrap;
+    display: inline-block;
+    color: #646363;
+    margin-left: 30px;
     
-}*/
+   
+}
 .menu ul li a:hover{
     color: #00a460;
-    font-weight: bold;
+    
     -webkit-transition: 0.15s ease-in;
     -moz-transition: 0.15s ease-in;
     -o-transition: 0.15s ease-in;
@@ -128,37 +83,34 @@ main{
 }
 /*fimHeader-2*/
 /*Slider*/
+
+.slider-principal{
+    margin-top: 87px;
+    float: left;
+    width: 100%;
+}
 button.slick-prev{
+    left: 14%;
+    background-image: url(../img/arrowl.png);    
+}
+button.slick-next{
+    right: 14%;
+    background-image: url(../img/arrowr.png);
+}
+button.slick-prev, button.slick-next{
     font-size: 0px;
     border: none;
     width: 27px;
     height: 51px;
     z-index: 9;
-    top: 35%;
-    left: 14%;
+    top: 50%;
     position: absolute;
     background-color: transparent;
-    background-image: url(../img/arrowl.png);
     cursor: pointer;
     background-repeat: no-repeat;
 }
-button.slick-next{
-    font-size: 0px;
-    border: none;
-    width: 27px;
-    height: 51px;
-    z-index: 9;
-    top: 35%;
-    right: 14%;
-    position: absolute;
-    background-color: transparent;
-    background-image: url(../img/arrowr.png);
-    cursor: pointer;
-}
 .slick-dots li {
-    display: inline-block;
-    
-    
+    display: inline-block; 
 }
 .slick-dots{
     margin: 0 auto;
@@ -166,7 +118,6 @@ button.slick-next{
     position: absolute;
     left: 45%;
     top: 90%;
-
 }
 .slick-dots li button{
     border: 3px solid #ffffff;
@@ -183,16 +134,29 @@ li.slick-active button{
 }
 /*fimSlider*/
 /*Sobre*/
+.sobre{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 40px;
+    height: 100px;
+    width: 100%;
+}
+
 .sobre img{
     width: 431px;
     height: 330px;
     float: left;
+    margin-left: 20px;
     margin-right: 20px;
 }
 .sobre h1{
+    text-align: left;
+    margin-bottom: 7px;
     color: #00a460;
     font-size: 36px;
-    margin: 0;
+    position: relative;
+    width: 50%;
 }
 .sobre h2{
     color: #979595;
@@ -202,11 +166,10 @@ li.slick-active button{
     font-weight: normal;
 }
 .sobre p{
+    
     text-align: justify;
-}
-
-.sobre{
-    padding-top: 40px;
+    width: 80%;
+    
 }
 /*fimsobre*/
 /*divisor*/
@@ -214,10 +177,11 @@ li.slick-active button{
     background-color: #00a460;
     color: #ffffff;
     height: 70px;
-    position: absolute;
+    position: relative;
     width: 100%;
-    margin-top: 110px;
     padding-top: 25px;
+    top: 275px;
+    
 }
 .divisor-1 p{
     float: left;
@@ -252,9 +216,11 @@ li.slick-active button{
 /*Area de Atuação*/
 
 .atuacao{
-    top: 210px;
-    position: absolute;
+    height: 600px;
+    top: 255px;
+    position: relative;
     width: 100%;
+    justify-content: space-around;
 }
 .atuacao h1{
     text-align: center;
@@ -272,8 +238,12 @@ li.slick-active button{
     text-align: justify;
 }
 .content{
+    position: relative;
     float: left;
-    margin-top: 285px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 .area-1 p, .area-2 p, .area-3 p{
     text-align: justify;
@@ -294,7 +264,8 @@ li.slick-active button{
     
 }
 .area-1 img, .area-2 img, .area-3 img{
-    margin-left: 93px;
+    justify-content: space-around;
+    margin-left: 135px;
     border-radius: 50%;
 }
 .area-1 img:hover, .area-2 img:hover, .area-3 img:hover{
@@ -310,17 +281,17 @@ li.slick-active button{
 /*FimAreaDeAtuação*/
 /*divisor2*/
 .divisor-2{
+    display: flex;
     float: left;
     background-color: #00a460;
     position: relative;
     height: 60px;
-    top: 20px;
+    top: 115px;
     width: 100%;
+    justify-content: space-around;
 }
 
 .divisor-2 p{
-    float: left;
-    left: 16%;
     margin-top: 22px;
     position: relative;
     color: #ffffff;
@@ -329,27 +300,29 @@ li.slick-active button{
 .divisor-2 input{
     position: relative;
     margin-top: 22px;
-    float: left;
-    right: -35%;
     margin-left: 5px;
 }
-.txt{
+.email-input-newsletter{
     width: 300px;
     height: 17px;
     border: 0;
-    border-radius: 30px;
+    border-radius: 5px;
     padding-left: 7px;
     font-family: montserrat;
     color: #696767;
     margin-left: 5px;
 }
 .btne{
+    right: 184px;
     border-radius: 30px;
     background-color: transparent;
     font-family: montserrat;
     color: white;
     border: 2px solid white;
     cursor: pointer;
+    position: relative;
+    top: -2px;
+    
 }
 .btne:hover{
     background-color: white;
@@ -363,3 +336,93 @@ li.slick-active button{
 }
 /*Fimdivisor2*/
 /*Artigos*/
+.artigos{
+    width: 100%;
+    height: 195px;
+}
+/*fimArtigos*/
+/*Contatos*/
+.contato{
+    width: 100%;
+    height: 460px;
+    background-color: #00a460;
+    color: #ffffff;
+    font-family: montserrat;
+   
+    
+}
+h1{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.input-nome, .input-email, .infos-contato{
+    margin-left: 20px;
+    width: 40%;
+    margin-right: 0px;
+    
+}
+.input-nome p, .input-email p, .input-msg p{
+    margin-bottom: 0%;
+}
+.nome-input, .email-input {
+   display: flex;
+   width: 300px;
+   height: 17px;
+   border: 0;
+   border-radius: 5px;
+   padding-left: 7px;
+   font-family: montserrat;
+   color: #696767;
+
+}
+.msg-input-contato{
+    width: 400px;
+    height: 285px;
+    border-radius: 10px;
+    font-family: montserrat;
+    color: #696767;
+    border: 0;
+    text-align: initial;
+}
+.input-msg{
+    float: right;
+    position: relative;
+    top: -110px;
+    right: 10%;
+}
+/*fimcontato*/
+/*footer*/
+footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+footer ul li{
+    display: inline-block;
+
+}
+footer p{
+    font-size: 20px;
+    color: #696767;
+    margin-left: 20px;
+}
+.fab, .far {
+    font-size: 40px;
+    color:#696767;
+    justify-content: space-around;
+    float: right;
+    margin-right: 30px;
+    right: -472px;
+    position: relative;
+}
+.fab:hover, .far:hover{
+    color:#00a460;
+    -webkit-transition: 0.13s ease-in;
+    -moz-transition: 0.13s ease-in;
+    -o-transition: 0.13s ease-in;
+    transition: 0.13s ease-in;
+}

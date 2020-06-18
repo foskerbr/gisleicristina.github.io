@@ -5,46 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="style.css" href="./css/reset.css">
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="./font-awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Gislei</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <main>
-            <div class="contato-header">
-                <ul>
-                    <li><img src="./img/celular.png" alt="celular" class="img-celular">+55 11 9 8598-3202</li>
-                    <li><img src="./img/email.png" alt="email" class="img-email"> gisleicristina@bol.com.br</li>
-                </ul>
-            </div>
-            <div class="redes-sociais">
-                <ul>
-                    <li><a href="#"><img src="./img/whatsapp.png" alt="whatsapp" class="img-wpp"></a></li>
-                    <li><a href="#"><img src="./img/facebook.png" alt="facebook" class="img-face"></a></li>
-                    <li><a href="#"><img src="./img/instagram.png" alt="instagram" class="img-insta"></a></li>
-                </ul>
-
-            </div>
-
-        </main>
-    </header>
-    <main>
-        <div class="header-2">
+    <header>
+        <div class="cabecalho">
             <div class="logo">
                 <img src="./img/Hoe.png" alt="Logo Gislei" class="img-logo">
             </div>
-            <div class="menu">
-                <ul>
-                    <li class="inicio-menu"><a href="#INICIO">INÍCIO</a></li>
-                    <li><a href="#SOBRE">SOBRE</a></li>
-                    <li><a href="#AREADEATUACAO">ÁREA DE ATUAÇÃO</a></li>
-                    <li><a href="#ARTIGOS">ARTIGOS</a></li>
-                    <li><a href="#CONTATO">CONTATO</a></li>
+
+            <nav class="menu">
+                <ul class="main-nav" id="js-menu">
+                    <li><a href="#" class="active">INÍCIO</a></li>
+                    <li><a href="#SOBRE" class="active">SOBRE</a></li>
+                    <li><a href="#AREADEATUACAO" class="active">ÁREA DE ATUAÇÃO</a></li>
+                    <li><a href="#ARTIGOS" class="active">ARTIGOS</a></li>
+                    <li><a href="#CONTATO" class="active">CONTATO</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
-    </main>
+    </header>
+
     <div class="cool-100">
         <div class="slider-principal">
             <img src="./img/carrousel.png" alt="Tribunal">
@@ -54,7 +40,7 @@
 
     </div>
     <main>
-        <div class="sobre" id="SOBRE">
+        <section class="sobre" id="SOBRE">
             <img src="./img/gislei.jpg" alt="Dra. Gislei">
             <div class="texto">
                 <h1>Quem sou eu ?</h1>
@@ -68,66 +54,124 @@
                     accumsan lacus vel facilisis.
                 </p>
             </div>
-        </div>
-    </main>
-    <div class="divisor-1">
-        <p>Vamos trabalhar juntos! Conte-me como posso ajudá-lo.</p>
-        <a href="#CONTATO"><input type="button" value="Entre Em Contato"></a>
-    </div>
-    <main>
-        <div class="atuacao" id="AREADEATUACAO">
+        </section>
+        <section class="divisor-1">
+            <p>Vamos trabalhar juntos! Conte-me como posso ajudá-lo.</p>
+            <a href="#CONTATO"><input type="button" value="Entre Em Contato"></a>
+        </section>
+        <section class="atuacao" id="AREADEATUACAO">
             <h1>Minhas <span class="esp">Especialidades</span></h1>
-        </div>
-        <div class="content">
-            <div class="area-1">
-                <img src="./img/logo.png" alt="Civil">
-                <h3>Direito Cívil</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                    accumsan
-                    lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                    viverra maecenas accumsan lacus vel facilisis.
-                </p>
-            </div>
-            <div class="area-2">
-                <img src="./img/logo.png" alt="Trabalhista">
-                <h3>Direito Trabalhista</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                    accumsan
-                    lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                    viverra maecenas accumsan lacus vel facilisis. </p>
-            </div>
-            <div class="area-3">
-                <img src="./img/logo.png" alt="Constitucional">
-                <h3>Direito Constitucional</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                    accumsan
-                    lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                    viverra maecenas accumsan lacus vel facilisis. </p>
-            </div>
-        </div>
 
+            <div class="content">
+                <div class="area-1">
+                    <img src="./img/logo.png" alt="Civil">
+                    <h3>Direito Cívil</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                        accumsan
+                        lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                        commodo
+                        viverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                </div>
+                <div class="area-2">
+                    <img src="./img/logo.png" alt="Trabalhista">
+                    <h3>Direito Trabalhista</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                        accumsan
+                        lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                        commodo
+                        viverra maecenas accumsan lacus vel facilisis. </p>
+                </div>
+                <div class="area-3">
+                    <img src="./img/logo.png" alt="Constitucional">
+                    <h3>Direito Constitucional</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                        accumsan
+                        lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                        commodo
+                        viverra maecenas accumsan lacus vel facilisis. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="divisor-2">
+            <p>Receba a nossa newsletter com todas as novidades!</p>
+            <input type="text" value="" placeholder="Insira seu email" class="email-input-newsletter"><a href="#"><input
+                    type="submit" value="Enviar" class="btne"></a>
+        </section>
+        <section class="artigos" id="ARTIGOS">
+
+        </section>
+        <section class="contato" id="CONTATO">
+            <h1>Entre em Contato</h1>
+            <div class="inputxt">
+
+                <div class="input-nome">
+                    <p>Nome:</p>
+                    <input type="text" id="nome-input" class="nome-input" placeholder="Insira seu nome.">
+                </div>
+                <div class="input-email">
+                    <p>Email:</p>
+                    <input type="text" id="email-input" class="email-input" placeholder="Insira seu Email.">
+                </div>
+                <div class="input-msg">
+                    <p>Mensagem:</p>
+                    <input type="text" id="msg-input-contato" class="msg-input-contato">
+                </div>
+                <P class="infos-contato">
+                    Escritório <br>
+                    Rua Arnaldo João, 47- Vila Ré <br>
+                    São Paulo - SP - 03660-000 <br><br>
+
+                    +55 11 9 8598-3202 <br>
+                    gisleicristina@bol.com.br <br>
+                </P>
+            </div>
+
+        </section>
     </main>
-    <div class="divisor-2">
-        <p>Receba a nossa newsletter com todas as novidades!</p>
-        <input type="text" value="" placeholder="Insira seu email" class="txt"><a href="#"><input type="submit"
-                value="Enviar" class="btne"></a>
-    </div>
-
+    <footer>
+        <p>Copyright © 2020 - Gislei Cristina da Silva | OAB: 438363</p>
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook-square"></i>
+                    </i></a></li>
+            <li><a href="#"><i class="fab fa-instagram">
+                    </i></a></li>
+            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+        </ul>
+    </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="./js/slider.js"></script>
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+
+            mainNav.classList.toggle('active');
+
+        });
+
+    </script>
 </body>
 
 </html>
